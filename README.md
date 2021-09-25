@@ -1,2 +1,1 @@
-# finance-discover
-Website feito com html, css e javascript.
+# Atividades DW2A4
