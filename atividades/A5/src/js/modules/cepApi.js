@@ -10,12 +10,12 @@ export default class Cep {
       let cep = document.getElementById('cep').value;
       
       cep = cep.replace(/\D/g, '');
-      this.getState(Number(cep));
+      this.getState(cep);
     })  
   }
 
   async getState(cep) {
-    const url = `https://viacep.com.br/ws/${cep}/json/`;
+    const url = `https://leonmarqs.github.io/atividades-dw2a4/atividades/A5/https://viacep.com.br/ws/${cep}/json/`;
 
     try {
       const stateResponse = await fetch(url);
