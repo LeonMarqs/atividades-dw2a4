@@ -1,14 +1,13 @@
 export default class Mask {
 
   constructor() {
-    document.querySelector('input').forEach(($input) => {
-      const field = $input.dataset.js;
+    const input = document.querySelector('input');
+      const field = input.dataset.js;
     
-      $input.addEventListener('input', e => {
+      input.addEventListener('input', e => {
         e.target.value = this[field](e.target.value)
       }, false)
-    });
-  }
+  };
 
   cep(value) {
     return value
