@@ -1,18 +1,15 @@
 :root {
-  --primary: #FFF;
-  --red: #F00946;
-  --blue: #276afb;
-  --green: #25ce4a;
+  --primary: #fff;
 }
 
-.btn {
+ .btn {
   padding: 8px 20px;
   border-radius: 4px;
   outline: none;
   border: none;
   cursor: pointer;
   white-space: nowrap;
-}
+} 
 
 .btn--primary {
   background-color: var(--primary);
@@ -21,8 +18,8 @@
 }
 
 .btn--outline {
-  background: transparent;
-  color: #FFF;
+  background-color: transparent;
+  color: #fff;
   padding: 8px 20px;
   border: 1px solid var(--primary);
   transition: all 0.3s ease-out;
@@ -41,13 +38,13 @@
 .btn--mobile {
   text-align: center;
   border-radius: 4px;
-  width: 80%;
+  /* width: 80%; */
   text-decoration: none;
-  font-size: 24px;
+  font-size: 1.1rem;
   background-color: transparent;
-  color: #FFF;
+  color: #fff;
   padding: 14px 20px;
-  border: 1px solid #FFF;
+  border: 1px solid #fff;
   transition: all 0.3s ease-out;
 }
 
@@ -60,42 +57,51 @@
 .btn--medium:hover,
 .btn--mobile:hover {
   transition: all 0.3s ease-out;
-  background: #FFF;
+  background: #fff;
   color: #242424;
 }
 
 .btn--wide:hover {
-  color: #FFF;
-  background-color: var(--red);
+  color: #fff;
+  background-color: #f00946;
   transition: all 0.2s ease-out;
 }
 
+.btn-link {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  text-decoration: none;
+  padding: 8px 16px;
+  /* height: 100%; */
+  width: 100%;
+}
+
 .blue {
-  background-color: var(--blue);
-  color: #FFF;
+  background-color: #276afb;
+  color: #fff;
   border: none;
 }
 
 .red {
-  background-color: var(--red);
-  color: #FFF;
+  background-color: #f00946;
+  color: #fff;
   border: none;
 }
 
 .primary {
   background-color: #242424;
-  color: #FFF;
-  border: none;
+  color: #fff;
 }
 
 .primary:hover {
-  background-color: #FFF;
+  background-color: #fff;
   color: #242424;
 }
 
 .green {
-  background-color: var(--green);
-  color: #FFF;
+  background: #25ce4a;
+  color: #fff;
   border: none;
 }
 

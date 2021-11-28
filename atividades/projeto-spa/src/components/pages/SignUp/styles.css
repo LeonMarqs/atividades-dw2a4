@@ -1,0 +1,71 @@
+:root {
+  --primary : rgb(28, 34, 55); 
+}
+
+body {
+  background-color: var(--primary);
+}
+
+.container-login-main {
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+  /* border: 1px solid #FFF; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container {
+  text-align: center;
+  border: 1px solid #FFF;
+  border-radius: 1rem;
+  width: 400px;
+  height: 300px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+
+.login-container h1 {
+  font-size: 2.5rem;
+  color: rgb(240, 9, 70);
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form input:first-child {
+  margin-top: 1rem;
+}
+
+form.form-login input {
+  background: var(--primary);
+  width: 90%;
+  height: 50px;
+  margin-bottom: 1rem;
+  padding: 12px 20px;
+  border: 1px solid #FFF;
+  border-radius: 0.2rem;
+  color: #FFF;
+}
+
+form.form-login  button {
+  padding: 0.6rem 1.4rem;
+  font-size: 1.3rem;
+  border-radius: 0.3rem;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(32, 104, 247);
+  color: #FFF;
+}
+
+@media (max-width: 455px) {
+  .login-container {
+    border: none;
+  }
+}
