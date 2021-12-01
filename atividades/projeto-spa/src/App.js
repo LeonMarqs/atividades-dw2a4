@@ -6,8 +6,8 @@ import Footer from './components/Footer';
 import Services from './components/pages/Services';
 import Products from './components/pages/Products';
 import SignUp from "./components/pages/SignUp";
-
 function App() {
+
   return (
     <Router>
       <Navbar />
